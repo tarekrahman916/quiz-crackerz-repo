@@ -7,8 +7,11 @@ const handleQuestionOption = (e) => {
 const Option = ({ option }) => {
   console.log(option);
   return (
-    <div onClick={handleQuestionOption}>
-      <input type="radio" value={option} name="quiz" />
+    <div
+      className="border border-gray-500 p-3 hover:text-blue-700 w-full rounded-md"
+      onClick={handleQuestionOption}
+    >
+      <input className="mr-2" type="radio" value={option} name="quiz" />
       {option}
     </div>
   );
