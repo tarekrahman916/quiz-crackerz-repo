@@ -4,7 +4,7 @@ This is an Educational Quizzes Website.
 
 ## `Live Link`
 
-Hosted in Netlify-> [http://localhost:3000](http://localhost:3000)
+Hosted in Netlify-> [https://lighthearted-sprinkles-89ba0e.netlify.app/](https://lighthearted-sprinkles-89ba0e.netlify.app/)
 
 ### `Uses React Router`
 
