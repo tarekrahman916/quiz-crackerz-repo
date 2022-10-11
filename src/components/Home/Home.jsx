@@ -5,7 +5,7 @@ import TopBanner from "../TopBanner/TopBanner";
 
 const Home = () => {
   const topics = useContext(TopicsContext);
-
+  console.log(topics);
   return (
     <div>
       <TopBanner></TopBanner>
