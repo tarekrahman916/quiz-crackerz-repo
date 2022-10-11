@@ -13,8 +13,6 @@ const Questions = ({ questionDetail }) => {
 
   const handleQuestionOption = (e) => {
     const selectedOption = e.currentTarget.innerText;
-    console.log(selectedOption.split(" ").join(""));
-    console.log(correctAnswer.split(" ").join(""));
 
     if (
       selectedOption.split(" ").join("") === correctAnswer.split(" ").join("")
@@ -27,7 +25,8 @@ const Questions = ({ questionDetail }) => {
   };
 
   const handleShowCorrectAns = () => {
-    Swal.fire(`${correctAnswer}`);
+    Swal.fire(correctAnswer);
+    console.log(typeof correctAnswer);
   };
 
   return (

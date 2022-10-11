@@ -15,7 +15,7 @@ const TopBanner = () => {
 
         <div className="flex justify-center">
           <button className="  border border-white mt-10 p-3  bg-indigo-600 rounded-lg hover:bg-indigo-900">
-            <Link to="/blog" className="flex gap-2">
+            <Link to="/blogs" className="flex gap-2">
               See Our All Blogs
               <ArrowLongRightIcon className="h-6 w-6 text-white" />
             </Link>

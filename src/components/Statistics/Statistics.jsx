@@ -8,7 +8,6 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from "recharts";
 
@@ -40,8 +39,8 @@ const Statistics = () => {
   // });
 
   return (
-    <div className="bg-slate-300 p-8">
-      <LineChart className="mx-auto" width={500} height={300} data={data}>
+    <div className="lg:p-8 p-3">
+      <LineChart className="lg:mx-auto " width={500} height={300} data={data}>
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip></Tooltip>
