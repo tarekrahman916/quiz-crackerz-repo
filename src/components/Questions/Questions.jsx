@@ -1,5 +1,7 @@
 import React from "react";
 import Option from "../Option/Option";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Questions = ({ questionDetail }) => {
   const { question, options, correctAnswer } = questionDetail;
@@ -9,9 +11,9 @@ const Questions = ({ questionDetail }) => {
   const handleQuestionOption = (e) => {
     const selectedOption = e.currentTarget.innerText;
     if (selectedOption === correctAnswer) {
-      console.log("correct");
+      toast.success("Your answer is correct !", { autoClose: 500 });
     } else {
-      console.log("False");
+      toast.warning("Your answer is wrong !", { autoClose: 500 });
     }
   };
 
@@ -29,6 +31,7 @@ const Questions = ({ questionDetail }) => {
           ></Option>
         ))}
       </div>
+      <ToastContainer />
     </div>
   );
 };
