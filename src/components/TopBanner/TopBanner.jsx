@@ -7,7 +7,7 @@ import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
 const TopBanner = () => {
   return (
     <div className="top-banner bg-black  mb-10 relative text-center">
-      <img className=" w-full opacity-30" src={heroImg} alt="" />
+      <img className=" w-full opacity-50" src={heroImg} alt="" />
       <div className="absolute bottom-1/3 right-1/2 translate-x-1/2 text-white mt-5 ">
         <h1 className="md:text-5xl text-2xl text-center ">
           Develop Your Skill By Taking Quizzes
