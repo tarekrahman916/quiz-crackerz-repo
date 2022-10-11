@@ -2,10 +2,10 @@ import React, { createContext, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Questions from "../Questions/Questions";
 
-const CorrectAnsContext = createContext([]);
+export const CorrectAnsContext = createContext([]);
 
 const QuizDetail = () => {
-  const [correctAns, setCorrectAns] = useState([]);
+  const [correctAns, setCorrectAns] = useState(0);
   const quizDetail = useLoaderData();
 
   console.log(quizDetail);
@@ -13,9 +13,9 @@ const QuizDetail = () => {
 
   return (
     <CorrectAnsContext.Provider value={[correctAns, setCorrectAns]}>
-      <div className="text-center">
-        <h1 className="text-5xl font-semibold mb-7">{name}</h1>
-        <h3>Correct Ans: {correctAns.length}</h3>
+      <div className="text-center ">
+        <h1 className="text-4xl font-semibold mb-7">Quiz For {name}</h1>
+        <h3>Correct Ans: {correctAns}</h3>
         <div className="">
           {questions.map((questionDetail) => (
             <Questions
