@@ -5,11 +5,11 @@ const QuizTopic = ({ topic }) => {
   const { id, name, logo, total } = topic;
   return (
     <div>
-      <div className="card card-compact w-full p-0  bg-slate-500 text-white shadow-xl">
+      <div className="card card-compact w-full p-2  bg-slate-500 text-white shadow-md shadow-black">
         <figure>
           <img
             src={logo}
-            className="p-3 rounded-2xl border w-full h-auto lg:h-64"
+            className="p-3 rounded-2xl border w-full h-80 lg:h-56"
             alt="Shoes"
           />
         </figure>

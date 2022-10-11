@@ -8,7 +8,7 @@ Hosted in Netlify-> [http://localhost:3000](http://localhost:3000)
 
 ### `Uses React Router`
 
-I used React Router for page navigate and used '<Link></Link>' instead of '<a></a>'.
+I used React Router for page navigate and used 'Link' instead of 'a' tag.
 
 ### `Loader & Context Api`
 

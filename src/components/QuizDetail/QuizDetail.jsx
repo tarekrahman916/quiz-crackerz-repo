@@ -8,7 +8,6 @@ const QuizDetail = () => {
   const [correctAns, setCorrectAns] = useState(0);
   const quizDetail = useLoaderData();
 
-  console.log(quizDetail);
   const { name, questions } = quizDetail.data;
 
   return (

@@ -25,8 +25,12 @@ const Questions = ({ questionDetail }) => {
   };
 
   const handleShowCorrectAns = () => {
-    Swal.fire(correctAnswer);
-    console.log(typeof correctAnswer);
+    Swal.fire(
+      correctAnswer
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+    );
   };
 
   return (
