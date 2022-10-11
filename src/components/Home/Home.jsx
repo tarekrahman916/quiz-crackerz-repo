@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <TopBanner></TopBanner>
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10 px-10 lg:px-20  lg:justify-between">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10 px-10 lg:px-20  lg:justify-between my-16">
         {topics.map((topic) => (
           <QuizTopic key={topic.id} topic={topic} />
         ))}
