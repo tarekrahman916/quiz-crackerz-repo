@@ -32,7 +32,7 @@ const data = [
 ];
 
 const Statistics = () => {
-  const topics = useContext(TopicsContext);
+  // const topics = useContext(TopicsContext);
 
   // const data = topics.map((topic) => {
   //   const topicsData = { name: topic.name, quiz: topic.total };
@@ -41,7 +41,7 @@ const Statistics = () => {
 
   return (
     <div className="bg-slate-300 p-8">
-      <LineChart className="mx-auto" width={700} height={300} data={data}>
+      <LineChart className="mx-auto" width={500} height={300} data={data}>
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip></Tooltip>
