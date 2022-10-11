@@ -2,7 +2,18 @@ import React from "react";
 import Option from "../Option/Option";
 
 const Questions = ({ questionDetail }) => {
-  const { question, options } = questionDetail;
+  const { question, options, correctAnswer } = questionDetail;
+
+  //console.log(correctAnswer);
+
+  const handleQuestionOption = (e) => {
+    const selectedOption = e.currentTarget.innerText;
+    if (selectedOption === correctAnswer) {
+      console.log("correct");
+    } else {
+      console.log("False");
+    }
+  };
 
   return (
     <div className="border p-5 w-9/12 mx-auto mb-5">
@@ -11,7 +22,11 @@ const Questions = ({ questionDetail }) => {
       </h1>
       <div className="grid lg:grid-cols-2 justify-between  text-center text-xl gap-5 mt-5 ">
         {options.map((option, idx) => (
-          <Option key={idx} option={option}></Option>
+          <Option
+            key={idx}
+            option={option}
+            handleQuestionOption={handleQuestionOption}
+          ></Option>
         ))}
       </div>
     </div>

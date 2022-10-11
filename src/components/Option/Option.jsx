@@ -1,11 +1,7 @@
 import React from "react";
 
-const handleQuestionOption = (e) => {
-  console.log(e.currentTarget.innerText);
-};
-
-const Option = ({ option }) => {
-  console.log(option);
+const Option = ({ option, handleQuestionOption }) => {
+  //console.log(option);
   return (
     <div
       className="border border-gray-500 p-3 hover:text-blue-700 w-full rounded-md"
