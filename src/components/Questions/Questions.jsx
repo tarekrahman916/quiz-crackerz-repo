@@ -12,7 +12,7 @@ const Questions = ({ questionDetail }) => {
   const { question, options, correctAnswer } = questionDetail;
 
   const handleQuestionOption = (e) => {
-    const selectedOption = e.currentTarget.innerText;
+    const selectedOption = e.currentTarget.value;
 
     if (
       selectedOption.split(" ").join("") === correctAnswer.split(" ").join("")
